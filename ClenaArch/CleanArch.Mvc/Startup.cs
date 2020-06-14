@@ -45,7 +45,7 @@ namespace CleanArch.Mvc
 
             services.AddDbContext<UniversityDBContext>(options =>
                options.UseSqlServer(
-                    Configuration.GetConnectionString("UniversityIdentityDBConnetion")));
+                    Configuration.GetConnectionString("UniversityDBConnetion")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
