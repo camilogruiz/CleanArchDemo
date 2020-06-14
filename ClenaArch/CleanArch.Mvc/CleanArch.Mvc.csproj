@@ -12,4 +12,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArch.Infa.Data\CleanArch.Infa.Data.csproj" />
+  </ItemGroup>
+
 </Project>
