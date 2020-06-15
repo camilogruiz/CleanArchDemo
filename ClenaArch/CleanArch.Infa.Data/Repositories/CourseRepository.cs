@@ -3,6 +3,7 @@ using CleanArch.Infra.Data.Context;
 using CleanArh.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace CleanArch.Infa.Data.Repositories
@@ -21,7 +22,7 @@ namespace CleanArch.Infa.Data.Repositories
             _ctx.Add(course);
         }
 
-        public IEnumerable<Course> GetCourses()
+        public IQueryable<Course> GetCourses()
         {
             return _ctx.Courses;
         }        
